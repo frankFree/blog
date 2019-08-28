@@ -5,7 +5,7 @@ export const getArticle = (params) => {
   params.client_id = Config.user.client_id
   params.client_secret = Config.user.client_secret
   return axios.request({
-    url: '/repos/loo41/Blog/issues',
+    url: '/repos/frankFree/blog/issues',
     params,
     method: 'get'
   })
