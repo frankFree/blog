@@ -40,7 +40,7 @@
         <div class="more-m-box">
           <div v-show="page !== 1" @click="proPage">
             <touch-ripple :speed="1" :opacity="0.3" color="#C0C4CC" transition="ease" class="item" >
-              <div><img src="../svg/pre.svg" class="icons"/>   PRO</div>
+              <div><img src="../svg/pre.svg" class="icons"/>   PRE</div>
             </touch-ripple>
           </div>
           <div v-show="page === 1"></div>

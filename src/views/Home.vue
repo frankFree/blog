@@ -27,7 +27,7 @@
             </div>
           </transition-group>
           <div class="more-box">
-            <div v-show="page !== 1" @click="proPage"><img src="../svg/pre.svg" />   PRO</div>
+            <div v-show="page !== 1" @click="proPage"><img src="../svg/pre.svg" />   PRE</div>
             <div></div>
             <div @click="nextPage" v-show="isData">NEXT   <img src="../svg/next.svg" /></div>
           </div>
