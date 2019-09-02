@@ -210,7 +210,7 @@ export default {
   z-index: 100;
   transition: transform 1s;
   /* background: linear-gradient(61deg, #909399 10%, #C0C4CC 20%, #C0C4CC 30%, #E4E7ED 40%, #EBEEF5 50%, #ffffff 0) */
-  background: no-repeat center/80% url('http://upload.jianshu.io/users/upload_avatars/6465136/7906c0c7-981e-4c14-929d-cf676c3c05d4.jpeg')
+  background: url('http://upload.jianshu.io/users/upload_avatars/6465136/7906c0c7-981e-4c14-929d-cf676c3c05d4.jpeg') 100% 100%
 }
 #appScreen_box {
   position: relative;
