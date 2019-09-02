@@ -13,12 +13,13 @@ module.exports =  {
     require('./src/assets/index_bg2.jpg'),
     require('./src/assets/index_bg3.jpg'),
     require('./src/assets/index_bg4.jpg'),
-    require('./src/assets/index_bg5.png'),
+    require('./src/assets/index_bg5.jpg'),
+    require('./src/assets/index_bg6.jpg'),
     require('./src/assets/index_bg6.jpg')
   ],
   // 登陆 github 相关信息
   user: {
-    name: "curryIs",
+    name: "frankFree",
     repo: "blog",
     client_id: 'ae2234ba9f91af06075c',
     client_secret: 'a381c89b4cf1237f97e126557cc646b09082a2f4'
