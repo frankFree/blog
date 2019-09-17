@@ -4,7 +4,7 @@
       <vuc-picture-contrast :type="type" :img="[img]" :W="W" :H="500" :pro="pro" :dir="dir" />
     </div>
     <slider-bar />
-    <div class="header-search-box" v-show="$route.path === '/pc'">
+    <!-- <div class="header-search-box" v-show="$route.path === '/pc'">
       <vucInput 
         type="arc"
         className="search"
@@ -20,7 +20,7 @@
     </div>
     <div class="header-search-box" v-show="$route.path === '/view'">
       {{title}}
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -55,21 +55,21 @@ export default {
     getScreenSize () {
       this.W = document.body.clientWidth
       this.pro = [this.W / 2, 250]
-    },
-    searchChange () {
-      if (!this.searchValue) return
-      let i = 0
-      let flag = null
-      this.article.forEach((item, index) => {
-        let match = new RegExp(this.searchValue.split('').join('|'), 'ig')
-        let matchInfo = item.title.match(match)
-        if (matchInfo && matchInfo.length > i) {
-          flag = index
-        }
-      })
-      if (!flag && flag != 0) return
-      this.setSearchIndex(flag)
     }
+    // searchChange () {
+    //   if (!this.searchValue) return
+    //   let i = 0
+    //   let flag = null
+    //   this.article.forEach((item, index) => {
+    //     let match = new RegExp(this.searchValue.split('').join('|'), 'ig')
+    //     let matchInfo = item.title.match(match)
+    //     if (matchInfo && matchInfo.length > i) {
+    //       flag = index
+    //     }
+    //   })
+    //   if (!flag && flag != 0) return
+    //   this.setSearchIndex(flag)
+    // }
   }
 }
 </script>
