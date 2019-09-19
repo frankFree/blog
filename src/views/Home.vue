@@ -16,7 +16,6 @@
                 <div class="article-info">
                   <div><img title="作者" src="../svg/zuozhe.svg" class="icons" /> <div>{{item.user && item.user.login}}</div></div>
                   <div v-if="item.comments"><img title="评论" src="../svg/pinglun.svg" class="icons" /> <div>{{item.comments}}</div></div>
-                  <div><img title="时间" src="../svg/shijian.svg" class="icons" /> <div>{{formatTime(item.created_at)}}</div></div>
                   <div><a :href="item.html_url" target="view_window"><img title="链接地址" src="../svg/lianjie.svg" class="icons" /></a></div>
                 </div>
                 <div class="underline"></div>
@@ -275,7 +274,7 @@ export default {
   height: 2px;
   bottom: 0;
   z-index: 2;
-  background: #E4E7ED;
+  background: #EB7347;
   transform: scaleX(0);
   transition: transform 1s;
   transform: scaleX(1)
@@ -293,7 +292,7 @@ export default {
 .article-info {
   height: 50px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   font-size: 14px!important;
   color: #606266

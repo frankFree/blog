@@ -6,19 +6,7 @@
       </touch-ripple>
     </div>
     <div @click="goGithub" class="slidbar-item">
-      <touch-ripple :speed="1" :opacity="0.3" color="#fff" transition="ease" class="item">
-        <img src="../svg/github.svg" />
-      </touch-ripple>
-    </div>
-    <div class="slidbar-item">
-      <touch-ripple :speed="1" :opacity="0.3" color="#fff" transition="ease" class="item slidbar-show" >
-        <span class="item-info">{{Config.qq}}</span><img src="../svg/qq.svg" />
-      </touch-ripple>
-    </div>
-    <div class="slidbar-item">
-      <touch-ripple :speed="1" :opacity="0.3" color="#fff" transition="ease" class="item slidbar-show" >
-        <span class="item-info">{{Config.email}}</span><img src="../svg/youxiang.svg" />
-      </touch-ripple>
+      <img src="../svg/github.svg" />
     </div>
   </div>
 </template>
@@ -42,20 +30,22 @@ export default {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
-  height: 100%;
+  right: 0;
+  height: 30%;
   width: 50px;
   box-sizing: border-box;
   padding: 50px 0;
-  background: rgba(255, 255, 255, .4);
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  background: rgba(255, 255, 255, .2);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   display: flex;
   flex-direction: column;
 }
 .slidbar-item {
   flex: 1;
   cursor: pointer;
+  text-align: center;
+  line-height: 80px;
 }
 .item {
   height: 100%;
@@ -69,9 +59,9 @@ export default {
   display: none;
 }
 .slidbar-show:hover {
-  width: 500%;
+  width: 200%;
   display: flex!important;
-  justify-content: flex-end;
+  justify-content: flex-start;
   box-sizing: border-box;
   padding: 10px;
   align-items: center;
@@ -79,8 +69,9 @@ export default {
 .item:hover .item-info{
   flex: 1;
   display: flex;
-  justify-content: flex-start!important;
+  justify-content: center!important;
   color: white;
   font-size: 16px;
+  margin-left: 240px;
 }
 </style>
